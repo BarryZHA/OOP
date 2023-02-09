@@ -9,8 +9,8 @@ class Flies:
         self.flight = 0
 
     def launch(self): 
-        random.randint(1,10)
+        self.flight = random.randint(1,10)
 
     def getmiles(self): 
-        return self.launch
+        return self.flight
 
