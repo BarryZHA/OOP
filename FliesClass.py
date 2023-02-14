@@ -4,11 +4,11 @@ import random
 class Flies: 
 
     def __init__(self,n): 
-        self.name = n 
-        self.wings = w 
+        self.wings = 2
         self.legs = 4 
         self.flight = 0
-
+        self.name = n
+        
     def flight_length(self): 
         self.flight = random.randint(1,10)
 

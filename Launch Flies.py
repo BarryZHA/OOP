@@ -1,13 +1,13 @@
 import FliesClass as FC 
 
-mosquito = FC.Flies()
-housefly = FC.Flies()
+name = input("Enter flies' name: ")
+fly_name = FC.Flies(name)
 
 
-housefly = FC.flight_length()
-mosquito = FC.flight_length()
-print(f"the {mosquito.getname()} can fly: ", housefly.getmiles(), " miles")
-print(f"the {housefly.getname()} can fly: ", mosquito.getmiles(), " miles")
+housefly = fly_name.flight_length()
+mosquito = fly_name.flight_length()
+print(f"the {fly_name.get_name()} can fly: ", fly_name.get_miles(), " miles")
+print(f"the {housefly.get_name()} can fly: ", mosquito.get_miles(), " miles")
 
 
 
